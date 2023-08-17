@@ -1,0 +1,3 @@
+[submodule "meta-rust"]
+	path = meta-rust
+	url = ./meta-rust
