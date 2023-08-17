@@ -2,6 +2,7 @@ inherit python3native
 
 # Common variables used by all Rust builds
 export rustlibdir = "${libdir}/rust"
+export CARGO_NET_GIT_FETCH_WITH_CLI = "true"
 FILES:${PN} += "${rustlibdir}/*.so"
 FILES:${PN}-dev += "${rustlibdir}/*.rlib ${rustlibdir}/*.rmeta"
 FILES:${PN}-dbg += "${rustlibdir}/.debug"
